@@ -1,12 +1,12 @@
 <div align="center">
 
   <h1>⚡ Raken Riski Saputra (raebn)</h1>
-  <p><b>Founder @ USRC · Team Lead @ MuaraAI · Full-Stack & Systems Developer</b></p>
+  <p><b>Founder @ USRC · Part of MuaraAI · Full-Stack & Systems Developer</b></p>
 
   <p>
     <a href="https://github.com/kabayy-sys"><img src="https://img.shields.io/badge/Location-Indonesia%20🇮🇩-0052B4?style=for-the-badge&logoColor=white" alt="Location" /></a>
     <a href="https://github.com/kabayy-sys"><img src="https://img.shields.io/badge/Campus-UBSI%20Pontianak-003366?style=for-the-badge&logoColor=white" alt="UBSI" /></a>
-    <a href="https://laku.muaraai.com"><img src="https://img.shields.io/badge/Product-Laku.muaraai.com-7C3AED?style=for-the-badge&logoColor=white" alt="Laku" /></a>
+    <a href="https://github.com/MuaraAI"><img src="https://img.shields.io/badge/Community-Part%20of%20MuaraAI-7C3AED?style=for-the-badge&logoColor=white" alt="MuaraAI" /></a>
   </p>
 
   <br />
@@ -16,9 +16,9 @@
 
 ### 🧭 About Me
 
-- 🚀 **Building [Laku](https://laku.muaraai.com)** — Demand-driven restock engine for multi-marketplace UMKMs (SIFest 2026 Digital Economy Track).
 - 🏛️ **Founder @ USRC (UBSI Study & Research Club)** — Driving cross-department collaboration across Study, Research, Project Building & Peer Mentorship.
-- 🛡️ **Open Source & Tooling** — Creator of **NetSpectre-Local** (100% offline OSINT & IP reconnaissance framework) and active contributor to the **MuaraAI** campus ecosystem.
+- ⚡ **Part of MuaraAI Community** — Building open-source developer tools, campus APIs, and web ecosystem for UBSI students.
+- 🛡️ **Open Source & Tooling** — Creator of **NetSpectre-Local** (100% offline OSINT & IP reconnaissance framework) and developer tools.
 - 🎯 **Engineering Philosophy** — Clean code, stdlib-first efficiency, product-driven execution, and shipped projects over raw hype.
 
 ---
@@ -38,14 +38,6 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center">🛍️ Laku</h3>
-      <p align="center">
-        <b>Restock Engine untuk UMKM Multi-Marketplace</b><br/>
-        <i>Engine prediksi & demand-driven restock berbasis data pasar untuk UMKM Indonesia.</i><br/><br/>
-        <a href="https://laku.muaraai.com">🌐 Live Demo</a> · <sub>Team MuaraAI</sub>
-      </p>
-    </td>
-    <td width="50%" valign="top">
       <h3 align="center">🏛️ USRC Web</h3>
       <p align="center">
         <b>Platform Komunitas UBSI Study & Research</b><br/>
@@ -53,8 +45,6 @@
         <sub>Next.js 15 · Supabase · Vercel</sub>
       </p>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h3 align="center">🛡️ NetSpectre-Local</h3>
       <p align="center">
@@ -63,12 +53,14 @@
         <a href="https://github.com/kabayy-sys/NetSpectre-Local-Offline-OSINT-IP-Reconnaissance-Framework">📦 Repository</a>
       </p>
     </td>
-    <td width="50%" valign="top">
+  </tr>
+  <tr>
+    <td width="100%" colspan="2" valign="top">
       <h3 align="center">⚡ MuaraAI / UBSI-API</h3>
       <p align="center">
         <b>Aggregator Open Source Ecosystem</b><br/>
-        <i>API & developer tools agregator kampus untuk mahasiswa & komunitas developer.</i><br/><br/>
-        <a href="https://github.com/MuaraAI">🏢 Organization</a>
+        <i>API & developer tools agregator kampus untuk mahasiswa & komunitas developer UBSI.</i><br/><br/>
+        <a href="https://github.com/MuaraAI">🏢 Organization (Part of MuaraAI)</a>
       </p>
     </td>
   </tr>
@@ -102,8 +94,8 @@
     <img src="https://img.shields.io/badge/GitHub-kabayy--sys-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
   &nbsp;&nbsp;
-  <a href="https://laku.muaraai.com">
-    <img src="https://img.shields.io/badge/Website-laku.muaraai.com-7C3AED?style=for-the-badge&logo=firefox&logoColor=white" alt="Website" />
+  <a href="https://github.com/MuaraAI">
+    <img src="https://img.shields.io/badge/Community-MuaraAI-7C3AED?style=for-the-badge&logo=github&logoColor=white" alt="MuaraAI Community" />
   </a>
 </div>
 
