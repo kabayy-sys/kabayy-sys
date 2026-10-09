@@ -1,10 +1,11 @@
 <div align="center">
 
-  <h1>⚡ Raken Riski Saputra (raebn)</h1>
-  <p><b>Founder @ USRC · Part of MuaraAI · Full-Stack & Systems Developer</b></p>
+  <h1>Raken Rizki Saputra (raebn)</h1>
+  <p><b>Founder & Leader @ USRC (UBSI Study & Research Club)</b></p>
+  <p><i>Full-Stack & Systems Developer · Part of MuaraAI Community</i></p>
 
   <p>
-    <a href="https://github.com/kabayy-sys"><img src="https://img.shields.io/badge/Location-Indonesia%20🇮🇩-0052B4?style=for-the-badge&logoColor=white" alt="Location" /></a>
+    <a href="https://github.com/kabayy-sys"><img src="https://img.shields.io/badge/Community-USRC%20Founder-0052B4?style=for-the-badge&logoColor=white" alt="USRC Founder" /></a>
     <a href="https://github.com/kabayy-sys"><img src="https://img.shields.io/badge/Campus-UBSI%20Pontianak-003366?style=for-the-badge&logoColor=white" alt="UBSI" /></a>
     <a href="https://github.com/MuaraAI"><img src="https://img.shields.io/badge/Community-Part%20of%20MuaraAI-7C3AED?style=for-the-badge&logoColor=white" alt="MuaraAI" /></a>
   </p>
@@ -16,8 +17,8 @@
 
 ### 🧭 About Me
 
-- 🏛️ **Founder @ USRC (UBSI Study & Research Club)** — Driving cross-department collaboration across Study, Research, Project Building & Peer Mentorship.
-- ⚡ **Part of MuaraAI Community** — Building open-source developer tools, campus APIs, and web ecosystem for UBSI students.
+- 🏛️ **Founder & Leader @ USRC (UBSI Study & Research Club)** — Driving cross-department collaboration across Study, Research, Project Building & Peer Mentorship.
+- 👥 **Part of MuaraAI Community** — Building open-source developer tools, campus APIs, and web ecosystem for UBSI students.
 - 🛡️ **Open Source & Tooling** — Creator of **NetSpectre-Local** (100% offline OSINT & IP reconnaissance framework) and developer tools.
 - 🎯 **Engineering Philosophy** — Clean code, stdlib-first efficiency, product-driven execution, and shipped projects over raw hype.
 
@@ -56,7 +57,7 @@
   </tr>
   <tr>
     <td width="100%" colspan="2" valign="top">
-      <h3 align="center">⚡ MuaraAI / UBSI-API</h3>
+      <h3 align="center">MuaraAI / UBSI-API</h3>
       <p align="center">
         <b>Aggregator Open Source Ecosystem</b><br/>
         <i>API & developer tools agregator kampus untuk mahasiswa & komunitas developer UBSI.</i><br/><br/>
