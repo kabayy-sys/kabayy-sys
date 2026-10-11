@@ -1,11 +1,39 @@
 <div align="center">
 
-<!-- ANIMATED HEADER -->
-<img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=700&size=28&duration=3000&pause=500&color=7A1B2E&center=true&width=600&lines=Raken+Rizki+Saputra;Full-Stack+Developer;USRC+Founder;Part+of+MuaraAI" alt="Animated typing" />
+<!-- STATIC NAME HEADER -->
+<h1 style="margin: 0; font-family: 'IBM Plex Mono'; font-size: 32px; font-weight: 900; color: #7A1B2E; letter-spacing: 2px;">
+  RAKEN RIZKI SAPUTRA
+</h1>
+
+<!-- ANIMATED PIXEL DRAGON LOOPING -->
+<div style="margin: 20px 0; height: 80px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+  <img src="https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif" alt="Pixel Dragon" style="height: 100%; object-fit: contain; animation: float 3s ease-in-out infinite;" />
+</div>
+
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotateZ(0deg); }
+    50% { transform: translateY(-20px) rotateZ(5deg); }
+  }
+  @keyframes wave {
+    0%, 100% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+</style>
+
+<!-- ANIMATED WAVE DIVIDER -->
+<div style="
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(90deg, transparent, #7A1B2E, #A62639, #7A1B2E, transparent);
+  clip-path: polygon(0% 50%, 2% 40%, 4% 50%, 6% 40%, 8% 50%, 10% 40%, 12% 50%, 14% 40%, 16% 50%, 18% 40%, 20% 50%, 22% 40%, 24% 50%, 26% 40%, 28% 50%, 30% 40%, 32% 50%, 34% 40%, 36% 50%, 38% 40%, 40% 50%, 42% 40%, 44% 50%, 46% 40%, 48% 50%, 50% 40%, 52% 50%, 54% 40%, 56% 50%, 58% 40%, 60% 50%, 62% 40%, 64% 50%, 66% 40%, 68% 50%, 70% 40%, 72% 50%, 74% 40%, 76% 50%, 78% 40%, 80% 50%, 82% 40%, 84% 50%, 86% 40%, 88% 50%, 90% 40%, 92% 50%, 94% 40%, 96% 50%, 98% 40%, 100% 50%);
+  opacity: 0.6;
+  animation: wave 4s linear infinite;
+"></div>
 
 <br/>
 
-<!-- GLASSMORPHIC INTRO CARD -->
+<!-- GLASSMORPHIC TAGLINE -->
 <div style="
   border: 2px solid #1A1A1A;
   border-radius: 12px;
