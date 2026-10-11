@@ -1,7 +1,14 @@
 <div align="center">
 
-<!-- ANIMATED TYPING HEADER -->
-<img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=700&size=28&duration=3000&pause=500&color=7A1B2E&center=true&width=600&lines=Raken+Rizki+Saputra;Full-Stack+Developer;USRC+Founder;Part+of+MuaraAI" alt="Animated typing" />
+<!-- STATIC NAME -->
+<h1 style="margin: 0; font-family: 'IBM Plex Mono'; font-size: 32px; font-weight: 900; color: #7A1B2E; letter-spacing: 2px;">
+  RAKEN RIZKI SAPUTRA
+</h1>
+
+<!-- DEVELOPER + COFFEE LOOPING GIF -->
+<div style="margin: 20px 0; height: 120px; display: flex; align-items: center; justify-content: center;">
+  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="Developer Coding with Coffee" style="height: 120px; border-radius: 8px;" />
+</div>
 
 <br/>
 
