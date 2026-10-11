@@ -1,39 +1,11 @@
 <div align="center">
 
-<!-- STATIC NAME HEADER -->
-<h1 style="margin: 0; font-family: 'IBM Plex Mono'; font-size: 32px; font-weight: 900; color: #7A1B2E; letter-spacing: 2px;">
-  RAKEN RIZKI SAPUTRA
-</h1>
-
-<!-- ANIMATED PIXEL DRAGON LOOPING -->
-<div style="margin: 20px 0; height: 100px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-  <img src="https://media.giphy.com/media/11JTxkBQtAfzuE/giphy.gif" alt="Pixel Dragon Flying" style="height: 100%; object-fit: contain; filter: hue-rotate(-10deg) saturate(1.2);" />
-</div>
-
-<!-- WAVE DIVIDER (SVG) -->
-<svg width="100%" height="50" viewBox="0 0 300 50" preserveAspectRatio="none" style="display: block; margin: 10px 0;">
-  <defs>
-    <style>
-      @keyframes wave-scroll {
-        0% { transform: translateX(-300px); }
-        100% { transform: translateX(300px); }
-      }
-      .wave-line {
-        animation: wave-scroll 4s linear infinite;
-        stroke: #7A1B2E;
-        stroke-width: 3;
-        fill: none;
-        stroke-linecap: round;
-      }
-    </style>
-  </defs>
-  <path class="wave-line" d="M0,25 Q75,5 150,25 T300,25" />
-  <path class="wave-line" d="M0,35 Q75,15 150,35 T300,35" style="stroke: #A62639; animation: wave-scroll 4s linear infinite 0.5s;" />
-</svg>
+<!-- ANIMATED TYPING HEADER -->
+<img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=700&size=28&duration=3000&pause=500&color=7A1B2E&center=true&width=600&lines=Raken+Rizki+Saputra;Full-Stack+Developer;USRC+Founder;Part+of+MuaraAI" alt="Animated typing" />
 
 <br/>
 
-<!-- GLASSMORPHIC TAGLINE -->
+<!-- GLASSMORPHIC INTRO CARD -->
 <div style="
   border: 2px solid #1A1A1A;
   border-radius: 12px;
