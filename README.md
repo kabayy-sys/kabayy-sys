@@ -6,30 +6,30 @@
 </h1>
 
 <!-- ANIMATED PIXEL DRAGON LOOPING -->
-<div style="margin: 20px 0; height: 80px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-  <img src="https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif" alt="Pixel Dragon" style="height: 100%; object-fit: contain; animation: float 3s ease-in-out infinite;" />
+<div style="margin: 20px 0; height: 100px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+  <img src="https://media.giphy.com/media/11JTxkBQtAfzuE/giphy.gif" alt="Pixel Dragon Flying" style="height: 100%; object-fit: contain; filter: hue-rotate(-10deg) saturate(1.2);" />
 </div>
 
-<style>
-  @keyframes float {
-    0%, 100% { transform: translateY(0px) rotateZ(0deg); }
-    50% { transform: translateY(-20px) rotateZ(5deg); }
-  }
-  @keyframes wave {
-    0%, 100% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
-  }
-</style>
-
-<!-- ANIMATED WAVE DIVIDER -->
-<div style="
-  width: 100%;
-  height: 40px;
-  background: linear-gradient(90deg, transparent, #7A1B2E, #A62639, #7A1B2E, transparent);
-  clip-path: polygon(0% 50%, 2% 40%, 4% 50%, 6% 40%, 8% 50%, 10% 40%, 12% 50%, 14% 40%, 16% 50%, 18% 40%, 20% 50%, 22% 40%, 24% 50%, 26% 40%, 28% 50%, 30% 40%, 32% 50%, 34% 40%, 36% 50%, 38% 40%, 40% 50%, 42% 40%, 44% 50%, 46% 40%, 48% 50%, 50% 40%, 52% 50%, 54% 40%, 56% 50%, 58% 40%, 60% 50%, 62% 40%, 64% 50%, 66% 40%, 68% 50%, 70% 40%, 72% 50%, 74% 40%, 76% 50%, 78% 40%, 80% 50%, 82% 40%, 84% 50%, 86% 40%, 88% 50%, 90% 40%, 92% 50%, 94% 40%, 96% 50%, 98% 40%, 100% 50%);
-  opacity: 0.6;
-  animation: wave 4s linear infinite;
-"></div>
+<!-- WAVE DIVIDER (SVG) -->
+<svg width="100%" height="50" viewBox="0 0 300 50" preserveAspectRatio="none" style="display: block; margin: 10px 0;">
+  <defs>
+    <style>
+      @keyframes wave-scroll {
+        0% { transform: translateX(-300px); }
+        100% { transform: translateX(300px); }
+      }
+      .wave-line {
+        animation: wave-scroll 4s linear infinite;
+        stroke: #7A1B2E;
+        stroke-width: 3;
+        fill: none;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <path class="wave-line" d="M0,25 Q75,5 150,25 T300,25" />
+  <path class="wave-line" d="M0,35 Q75,15 150,35 T300,35" style="stroke: #A62639; animation: wave-scroll 4s linear infinite 0.5s;" />
+</svg>
 
 <br/>
 
