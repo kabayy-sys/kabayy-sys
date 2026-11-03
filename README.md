@@ -37,17 +37,10 @@
 <h2 align="center">◈ STATS ◈</h2>
 
 <div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=kabayy-sys&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" alt="GitHub stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kabayy-sys&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="Top languages" />
-
-<br/>
-
-<img src="https://streak-stats.demolab.com?user=kabayy-sys&theme=tokyonight&hide_border=true" alt="Streak stats" />
+  <img src="assets/stats.svg" width="100%" alt="GitHub stats: overview, top languages, contributions and streak" />
+</div>
 
 <img src="assets/divider.svg" width="100%" alt="" />
-
-</div>
 
 <h2 align="center">◈ CONTACT ◈</h2>
 
