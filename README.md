@@ -38,12 +38,12 @@
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=kabayy-sys&show_icons=true&hide_border=false&include_all_commits=true&count_private=true&bg_color=0B0B0F&border_color=7A1B2E&title_color=D4AF6A&text_color=C9C9D1&icon_color=C0314F&ring_color=D4AF6A" alt="GitHub stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kabayy-sys&layout=compact&langs_count=6&hide_border=false&bg_color=0B0B0F&border_color=7A1B2E&title_color=D4AF6A&text_color=C9C9D1" alt="Top languages" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=kabayy-sys&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" alt="GitHub stats" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kabayy-sys&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="Top languages" />
 
 <br/>
 
-<img src="https://streak-stats.demolab.com?user=kabayy-sys&background=0B0B0F&border=7A1B2E&stroke=7A1B2E&ring=C0314F&fire=D4AF6A&currStreakLabel=D4AF6A&currStreakNum=FFFFFF&sideLabels=C9C9D1&sideNums=FFFFFF&dates=8A8A96" alt="Streak stats" />
+<img src="https://streak-stats.demolab.com?user=kabayy-sys&theme=tokyonight&hide_border=true" alt="Streak stats" />
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
