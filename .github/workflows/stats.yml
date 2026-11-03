@@ -23,7 +23,7 @@ jobs:
           python-version: "3.12"
 
       - name: Generate stats card
-        run: python scripts/generate_stats.py
+        run: python generate_stats.py
         env:
           GH_USER: kabayy-sys
           # Optional: add a PAT (read:user) as secret GH_PAT to include private contributions
