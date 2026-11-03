@@ -18,26 +18,18 @@
 
 <h2 align="center">◈ PROFILE ◈</h2>
 
-<p align="center">
-  Founder & Lead of <b>USRC</b> — a research & build community bridging three departments, 100+ members strong.<br/>
-  Core member of <b>MuaraAI</b> — open-source tooling for the UBSI ecosystem.<br/>
-  Clean architecture over clever code. Stdlib-first. Security-minded.
-</p>
-
 <div align="center">
-
-| 🔨 Engineering | 🛡️ Security | 🏛️ Leadership |
-|:---:|:---:|:---:|
-| Next.js · PostgreSQL · Supabase | Offline OSINT · Network analysis | Community · Mentoring · System design |
+  <img src="assets/profile.svg" width="100%" alt="Founder & Lead of USRC, Core member of MuaraAI. 100+ members. Clean architecture, stdlib-first, security-minded." />
+  <br/><br/>
+  <img src="assets/focus.svg" width="100%" alt="Engineering: Next.js, React, PostgreSQL, Supabase. Security: Offline OSINT, network analysis. Leadership: community, mentoring, system design." />
+</div>
 
 <img src="assets/divider.svg" width="100%" alt="" />
-
-</div>
 
 <h2 align="center">◈ ARSENAL ◈</h2>
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,py,nextjs,react,tailwind,nodejs,fastapi,supabase,postgres,docker,vercel,git,github,bash,vscode&perline=8&theme=dark" alt="Tech stack" />
+  <img src="assets/arsenal.svg" width="100%" alt="Languages: TypeScript, JavaScript, Python, SQL, Bash. Frontend: Next.js 15, React 19, Tailwind CSS, Framer Motion. Backend: Node.js, FastAPI, PostgreSQL, Supabase. DevOps: Docker, Vercel, GitHub Actions, Git, VS Code." />
 </div>
 
 <img src="assets/divider.svg" width="100%" alt="" />
