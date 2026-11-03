@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
 """Generate assets/stats.svg — a self-hosted, animated stats card (stdlib only).
 
+Engine : lowlighter/metrics JSON dump (METRICS_JSON) + GitHub API fallback.
+Design : the SVG renderer below.
+
 Env:
-  GH_USER   GitHub username (default: kabayy-sys)
-  GH_TOKEN  token for GraphQL (GITHUB_TOKEN works; a PAT with read:user adds private contributions)
-  OUT       output path (default: assets/stats.svg)
-  DEMO=1    render with sample data (for design preview)
+  GH_USER       GitHub username (default: kabayy-sys)
+  GH_TOKEN      token for the API fallback (GITHUB_TOKEN works; a PAT adds private data)
+  METRICS_JSON  path to the JSON dump from lowlighter/metrics (default: metrics.json)
+  OUT           output path (default: assets/stats.svg)
+  DEMO=1        render with sample data (for design preview)
 """
+import collections
 import datetime as dt
 import html
 import json
@@ -65,7 +70,7 @@ def streaks(days):
     return cur, longest
 
 
-def fetch():
+def fetch_api():
     d = dict(stars=None, commits=None, prs=None, issues=None, repos=None,
              followers=None, total=None, cur=None, longest=None, langs={})
     try:  # GraphQL (needs token)
@@ -107,6 +112,125 @@ def fetch():
     except Exception as e:
         print("REST unavailable:", e)
     return d
+
+
+# ------------------------------------------------------------------ metrics engine
+METRICS_JSON = os.environ.get("METRICS_JSON", "metrics.json")
+
+
+def _num(v):
+    if isinstance(v, bool):
+        return None
+    if isinstance(v, (int, float)):
+        return int(v)
+    if isinstance(v, dict) and isinstance(v.get("totalCount"), (int, float)):
+        return int(v["totalCount"])
+    return None
+
+
+def _walk(obj):
+    q = collections.deque([obj])
+    while q:
+        cur = q.popleft()
+        yield cur
+        if isinstance(cur, dict):
+            q.extend(cur.values())
+        elif isinstance(cur, list):
+            q.extend(cur)
+
+
+def _path(roots, *keys):
+    for root in roots:
+        cur = root
+        for k in keys:
+            cur = cur.get(k) if isinstance(cur, dict) else None
+            if cur is None:
+                break
+        v = _num(cur)
+        if v is not None:
+            return v
+    return None
+
+
+def _find(obj, key):
+    for node in _walk(obj):
+        if isinstance(node, dict) and key in node:
+            v = _num(node[key])
+            if v is not None:
+                return v
+    return None
+
+
+def _metrics_langs(m):
+    for node in _walk(m):
+        if not (isinstance(node, dict) and isinstance(node.get("languages"), dict)):
+            continue
+        L = node["languages"]
+        out = {}
+        if isinstance(L.get("favorites"), list):
+            for x in L["favorites"]:
+                if isinstance(x, dict) and "name" in x:
+                    v = x.get("value", x.get("size"))
+                    if isinstance(v, (int, float)) and not isinstance(v, bool):
+                        out[x["name"]] = float(v)
+        if not out and isinstance(L.get("stats"), dict):
+            out = {k: float(v) for k, v in L["stats"].items()
+                   if isinstance(v, (int, float)) and not isinstance(v, bool)}
+        if out:
+            return out
+    return {}
+
+
+def _metrics_streak(m):
+    for node in _walk(m):
+        if isinstance(node, dict) and isinstance(node.get("streak"), dict):
+            s = node["streak"]
+            cur = _num(s.get("current"))
+            mx = _num(s["max"] if "max" in s else s.get("longest"))
+            if cur is not None or mx is not None:
+                return cur, mx
+    return None, None
+
+
+def load_metrics(path):
+    """Read the lowlighter/metrics JSON dump defensively. Returns a partial stats dict."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            m = json.load(f)
+    except Exception as e:
+        print(f"metrics JSON not usable ({path}): {e}")
+        return {}
+    if not isinstance(m, dict):
+        return {}
+    print("metrics JSON top-level keys:", sorted(m.keys())[:20])
+    roots = [m] + ([m["data"]] if isinstance(m.get("data"), dict) else [])
+    cur, longest = _metrics_streak(m)
+    out = dict(
+        stars=_path(roots, "computed", "repositories", "stargazers"),
+        commits=_path(roots, "computed", "commits"),
+        prs=_path(roots, "user", "pullRequests"),
+        issues=_path(roots, "user", "issues"),
+        repos=_path(roots, "user", "repositories"),
+        followers=_path(roots, "user", "followers"),
+        total=_find(m, "totalContributions"),
+        cur=cur, longest=longest, langs=_metrics_langs(m),
+    )
+    return {k: v for k, v in out.items() if v not in (None, {})}
+
+
+def fetch():
+    """Metrics JSON first (engine), GitHub API fills the gaps."""
+    api = fetch_api()
+    met = load_metrics(METRICS_JSON)
+    # 'commits' from metrics is activity-window based; the API figure is the true 1-year total.
+    prefer_api = {"commits"}
+    merged, source = {}, {}
+    for k in api:
+        use_met = k in met and not (k in prefer_api and api[k] not in (None, {}))
+        merged[k] = met[k] if use_met else api[k]
+        source[k] = "metrics" if use_met else ("api" if api[k] not in (None, {}) else "missing")
+    print("data sources:", source)
+    return merged
 
 
 def demo():
